@@ -2,15 +2,15 @@
 $pdo = new PDO(
 	'mysql:host=localhost;dbname=scrubs;charset=utf8','root','rootzhuykovkb03'
 );
-$stmt=$pdo->prepare('select * from patients');
-$stmt->execute();
+$stmt = $pdo -> prepare ('select * from patients');
+$stmt -> execute();
 $pdo -> exec ("SET CHARACTER SET utf8");
-$pdo ->setAttribute(
+$pdo -> setAttribute(
 PDO::ATTR_ERRMODE,
 PDO::ERRMODE_EXCEPTION
 );
 
-$res=$stmt->fetchAll();
+$res = $stmt -> fetchAll();
 if ( count( $res) ){
 	echo '<ul>';
 	foreach ($res as $row){
