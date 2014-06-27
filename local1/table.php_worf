@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+<table>
+<?php
+for ( $i=1; $i<=9; $i++)
+{
+echo '<td>'.$i.'</td>';
+}
+?>
+<tr>
+<td>
+
+<?php
+echo '<table>';
+for ( $i=1; $i<=9; $i++){
+    echo '<tr><th>' . $i . '</th>';
+    for ($j=1; $j<=9; $j++){
+        echo '<td> ' . $i*$j .  '</td>';
+    }
+    echo '</tr>';
+}
+?>
+</table>

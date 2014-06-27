@@ -1,0 +1,10 @@
+<?php
+
+$name = (isset($_POST['name'])) ? $_POST['name'] : '';
+$mail = (isset($_POST['mail'])) ? $_POST['mail'] : '';
+$age = (isset($_POST['age'])) ? $_POST['age'] : '';
+$comm = (isset($_POST['comm'])) ? $_POST['comm'] : '';
+
+//$message = "Имя: " . $name . "<br> Email: " . $mail . "<br> Возраст: " . $age . "<br> Комментарии: " . $comm;
+
+//printf("%s", $message);
